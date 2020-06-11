@@ -1,0 +1,36 @@
+{
+  "name": "node-api-example",
+  "version": "1.0.0",
+  "description": "Nodejs api example",
+  "main": "./src/bin/www",
+  "scripts": {
+    "start": "npm run start:dev",
+    "start:dev": "nodemon ./src/bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/wasck/node-api-example.git"
+  },
+  "keywords": [
+    "node",
+    "api"
+  ],
+  "author": "wschik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wasck/node-api-example/issues"
+  },
+  "homepage": "https://github.com/wasck/node-api-example#readme",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pug": "2.0.0-beta11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
