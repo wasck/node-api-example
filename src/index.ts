@@ -1,11 +1,3 @@
-// let createError = require('http-errors');
-// let express = require('express');
-// let path = require('path');
-// let cookieParser = require('cookie-parser');
-// let logger = require('morgan');
-
-// const indexRouter = require('./routes/index');
-
 import createError from 'http-errors';
 import express from 'express';
 import { Request, Response, NextFunction }  from 'express';
@@ -14,7 +6,7 @@ import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import HttpStatus from './enums/http-status-code.enum';
 
-import router from './routes/index'
+import router from './routes'
 
 const app = express();
 

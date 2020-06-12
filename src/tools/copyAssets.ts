@@ -1,6 +1,6 @@
 import * as shell from 'shelljs';
 import fs from 'fs';
-import Logger from '../config/winston.config';
+import Logger from '../utility/logger';
 import LogLevel from '../enums/log-level.enum';
 
 const envPath = './.env';

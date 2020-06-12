@@ -4,14 +4,10 @@
  * Module dependencies.
  */
 
-// var app = require('../index');
-// var debug = require('debug')('node-api-example:server');
-// var http = require('http');
-
 import app from '../index';
 import http from 'http';
 import debug from 'debug';
-import Logger from '../config/winston.config';
+import Logger from '../utility/logger';
 import LogLevel from '../enums/log-level.enum';
 import dotenv from 'dotenv';
 
@@ -102,9 +98,8 @@ function onError(error: any) {
  */
 
 function onListening() {
-
   Logger.info({
     label: 'label',
-    message: `${pckg.name} [${pckg.version}] listening on port ${serverPort}`
+    message: `${pckg.name} [${pckg.version}] listening on http://localhost:${serverPort} mode: ${process.env.ENVIRONMENT ? process.env.ENVIRONMENT : ''}`
   });
 }
