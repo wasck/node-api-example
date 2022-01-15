@@ -50,7 +50,7 @@
     "morgan": "~1.9.1",
     "pug": "2.0.0-beta11",
     "require-dir": "^1.2.0",
-    "shelljs": "^0.8.4"
+    "shelljs": "^0.8.5"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.2",
